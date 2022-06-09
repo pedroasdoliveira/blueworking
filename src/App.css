@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #000 url(./assets/img/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+body, input, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.logo {
+  font-family: 'confoorta', cursive;
+  font-size: 4rem;
+  color: #3359ec;
+  height: 150px;
+  text-align: center;
+  margin-top: .6rem;
+}
+
+.container {
+  margin: 88px auto 0;
+  max-width: 460px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  background: #f4f5f9;
+  margin-top: .6rem;
+  border-radius: .6rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, .5) 1px 1px 15px;
+}
+
+.content > p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content form label {
+  font-size: .8rem;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.content form input {
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.content form input:focus {
+  border-color: #3359ec;
+}
+
+.content .btn {
+  border: 0;
+  border-radius: .5rem;
+  height: 42px;
+  color: #f4f5f9;
+  background-color: #3359ec;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+} 
+
+.content .btn:hover {
+  background-color: blue;
+  transform: scale(0.8);
+}
